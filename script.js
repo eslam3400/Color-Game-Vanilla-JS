@@ -49,7 +49,10 @@ const select = (e) => {
     alert(`Bingo! you guessed it right after ${tries} times Champ :D`)
     newGame()
   }
-  else tries++
+  else {
+    e.style.visibility = "hidden"
+    tries++
+  }
 }
 
 const renderCards = () => {
